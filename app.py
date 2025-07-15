@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from openai import AzureOpenAI
 
 app = Flask(__name__)
@@ -8,6 +8,10 @@ client = AzureOpenAI(
     azure_endpoint="https://frun1-mcodqqee-eastus2.cognitiveservices.azure.com/",
     api_key="YOUR_API_KEY"
 )
+
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -24,6 +28,3 @@ def chat():
     )
 
     return jsonify({"response": response.choices[0].message.content})
-
-if __name__ == '__main__':
-    app.run(debug=True)
