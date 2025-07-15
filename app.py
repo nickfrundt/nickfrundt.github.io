@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 client = AzureOpenAI(
     api_version="2024-12-01-preview",
-    azure_endpoint="https://frun1-mcodqqee-eastus2.cognitiveservices.azure.com/",
+    azure_endpoint="https://nickbot-hxhfhga5d9hfeqdr.eastus2-01.azurewebsites.net/chat",
     api_key="BHJTlXPFMUeoPyKyiWTuyjD7Yqr2CIgYamSrcl369gec6FeeprxiJQQJ99BGACHYHv6XJ3w3AAAAACOGvJtk"
 )
 
