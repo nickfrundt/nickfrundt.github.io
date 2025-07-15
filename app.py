@@ -6,7 +6,7 @@ app = Flask(__name__)
 client = AzureOpenAI(
     api_version="2024-12-01-preview",
     azure_endpoint="https://frun1-mcodqqee-eastus2.cognitiveservices.azure.com/",
-    api_key="YOUR_API_KEY"
+    api_key="BHJTlXPFMUeoPyKyiWTuyjD7Yqr2CIgYamSrcl369gec6FeeprxiJQQJ99BGACHYHv6XJ3w3AAAAACOGvJtk"
 )
 
 @app.route('/')
