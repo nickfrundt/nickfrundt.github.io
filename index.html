@@ -355,4 +355,23 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	<body>
+		<h1>Ask NickBot</h1>
+		<textarea id="userInput" rows="4" cols="50"></textarea><br>
+		<button onclick="sendMessage()">Send</button>
+		<pre id="response"></pre>
+	  
+		<script>
+		  async function sendMessage() {
+			const message = document.getElementById("userInput").value;
+			const res = await fetch("/chat", {
+			  method: "POST",
+			  headers: {"Content-Type": "application/json"},
+			  body: JSON.stringify({message})
+			});
+			const data = await res.json();
+			document.getElementById("response").innerText = data.response;
+		  }
+		</script>
+	  </body>
 </html>
