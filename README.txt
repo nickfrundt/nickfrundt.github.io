@@ -29,10 +29,11 @@ The site is fully static and does not require user authentication or special con
 
 ## Technologies Used
 - HTML5
-- CSS3
+- CSS, SCSS
 - JavaScript
 - GitHub Pages (for deployment)
 
 ## Project Context
 This website was made as a personal project outside of any academic or professional setting.
 It aligns with the university’s mission by emphasizing responsible presentation of information and preparation for meaningful professional engagement.
+
